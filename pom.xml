@@ -128,11 +128,11 @@
                     <configuration>
                         <obrRepository>NONE</obrRepository>
                         <instructions>
-                            <SCM-Revision>${buildNumber}</SCM-Revision>
+                            <SCM-Revision>experiment</SCM-Revision>
                         </instructions>
                     </configuration>
                 </plugin>
-                <plugin>
+                <!-- <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>${maven.buildnumber.plugin.version}</version>
@@ -148,7 +148,7 @@
                         <doCheck>false</doCheck>
                         <doUpdate>false</doUpdate>
                     </configuration>
-                </plugin>
+                </plugin> -->
             </plugins>
         </pluginManagement>
 
