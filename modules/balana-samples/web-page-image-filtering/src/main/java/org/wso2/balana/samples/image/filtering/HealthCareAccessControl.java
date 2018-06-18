@@ -50,7 +50,7 @@ public class HealthCareAccessControl {
 		initBalana();
 
 		List<String> requestList = new ArrayList<>();
-		String folder = "/Users/okielabackend/incubator-openaz/openaz-xacml-test/src/test/resources/testsets/healthcare/xml-requests";
+		String folder = "E:\\Workspace\\Thesis\\openaz-work\\openaz-xacml-test\\src\\test\\resources\\testsets\\healthcare\\xml-requests";
 		File file = new File(folder);
 
 		for (File child : file.listFiles()) {
@@ -84,7 +84,7 @@ public class HealthCareAccessControl {
 
 		// using file based policy repository. so set the policy location as system
 		// property
-		String policyLocation = "/Users/okielabackend/XACML-SMT/Research/alfa-project/alfa-project/src-gen/health_care.healthCarePsPatientRecord.xml";
+		String policyLocation = "E:\\Workspace\\Thesis\\Research\\alfa-project\\alfa-project\\src-gen\\health_care.HealthCarePsPatientRecord.xml";
 		System.setProperty(FileBasedPolicyFinderModule.POLICY_DIR_PROPERTY, policyLocation);
 		// create default instance of Balana
 		balana = Balana.getInstance();
